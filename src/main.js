@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Accordion from './components/Accordion.vue';
+import AccordionList from './components/AccordionList.vue';
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export {
+  Accordion,
+  AccordionList
+};

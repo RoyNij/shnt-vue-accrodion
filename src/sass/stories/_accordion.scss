@@ -1,0 +1,32 @@
+.shnt-accordion{
+	margin: 10px 0;
+	border-radius: 5px;
+	overflow: hidden;
+	border: solid 1px #DADADA;
+	// box-shadow: 3px 5px 5px rgba( 40, 40, 40, 0.1);
+
+	.shnt-accordion__header{
+		padding: 5px;
+		font-size: 18px;
+		font-weight: 600;
+		height: 40px;
+		background-color: #EFEFEF;
+
+		.shnt-accordion__title{
+			margin: 0;
+			line-height: 30px;
+		}
+
+		.shnt-close-button{
+			margin: 10px;
+
+			.shnt-close-button__line{
+				background-color: #007D7D;
+			}
+		}
+	}
+
+	.shnt-accordion__content{
+		background-color: #FCFCFC;
+	}
+}
