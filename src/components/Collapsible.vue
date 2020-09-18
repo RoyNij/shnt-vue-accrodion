@@ -26,11 +26,15 @@ export default {
 		horizontal: {
 			type: Boolean,
 			default: false
+		},
+		immediateClose: {
+			type: Boolean,
+			default: false
 		}
 	},
 	computed: {
 		containerTransition(){
-			if( this.open ){
+			if( this.open || this.immediateClose ){
 				return `height ${this.m_duration}ms`
 			}
 			return `height ${this.m_duration}ms ${this.m_duration}ms`
@@ -39,7 +43,7 @@ export default {
 			if( this.open ){
 				return `opacity ${this.m_duration}ms ${this.m_duration}ms`
 			}
-			return `opacity ${this.m_duration}ms`
+			return this.immediateClose ? `opacity 0ms` : `opacity ${this.m_duration}ms`
 		},
 		containerStyle(){
 			return {
