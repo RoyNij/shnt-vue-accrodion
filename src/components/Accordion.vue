@@ -7,7 +7,7 @@
 			<CloseButton :toggled='open' :animation='animation'/>
 		</div>
 		<Collapsible :open='open'>
-			<slot name='content'></slot>
+			<slot></slot>
 		</Collapsible>
 	</div>
 </template>

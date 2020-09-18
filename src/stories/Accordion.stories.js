@@ -16,7 +16,7 @@ const Template = ( args, { argTypes } ) => ( {
 	components: { Accordion },
 	template: `
 	<Accordion v-bind="$props">
-		<template #content>
+		<template>
 			<p>Eaque earum id in quis voluptatem omnis et. Sit facere minus omnis qui nemo. Eligendi nesciunt iure totam adipisci minima. Modi reiciendis nihil facere et id commodi. Et illum est non reprehenderit earum dolor eveniet. Eum est voluptas consectetur error.</p>
 			<p>Voluptas numquam animi quisquam est officiis rem. Cumque et sapiente voluptatibus delectus fuga incidunt quas. Odit enim exercitationem aut a iure adipisci quidem. Tempora pariatur et maxime temporibus. Voluptatem hic voluptatem reiciendis fuga voluptates est doloremque facilis. Blanditiis facere ut architecto aut.</p>
 		</template>
@@ -30,19 +30,19 @@ const Multiple = ( args, { argTypes } ) => ( 	{
 	<AccordionList v-bind="$props">
 		<template v-slot='slotProps'>
 			<Accordion v-bind="slotProps" title="Accordion 1">
-				<template #content>
+				<template>
 					<p>Eaque earum id in quis voluptatem omnis et. Sit facere minus omnis qui nemo. Eligendi nesciunt iure totam adipisci minima. Modi reiciendis nihil facere et id commodi. Et illum est non reprehenderit earum dolor eveniet. Eum est voluptas consectetur error.</p>
 					<p>Voluptas numquam animi quisquam est officiis rem. Cumque et sapiente voluptatibus delectus fuga incidunt quas. Odit enim exercitationem aut a iure adipisci quidem. Tempora pariatur et maxime temporibus. Voluptatem hic voluptatem reiciendis fuga voluptates est doloremque facilis. Blanditiis facere ut architecto aut.</p>
 				</template>
 			</Accordion>
 			<Accordion v-bind="slotProps" title="Accordion 2">
-				<template #content>
+				<template>
 					<p>Eaque earum id in quis voluptatem omnis et. Sit facere minus omnis qui nemo. Eligendi nesciunt iure totam adipisci minima. Modi reiciendis nihil facere et id commodi. Et illum est non reprehenderit earum dolor eveniet. Eum est voluptas consectetur error.</p>
 					<p>Voluptas numquam animi quisquam est officiis rem. Cumque et sapiente voluptatibus delectus fuga incidunt quas. Odit enim exercitationem aut a iure adipisci quidem. Tempora pariatur et maxime temporibus. Voluptatem hic voluptatem reiciendis fuga voluptates est doloremque facilis. Blanditiis facere ut architecto aut.</p>
 				</template>
 			</Accordion>
 			<Accordion v-bind="slotProps" title="Accordion 3">
-				<template #content>
+				<template>
 					<p>Eaque earum id in quis voluptatem omnis et. Sit facere minus omnis qui nemo. Eligendi nesciunt iure totam adipisci minima. Modi reiciendis nihil facere et id commodi. Et illum est non reprehenderit earum dolor eveniet. Eum est voluptas consectetur error.</p>
 					<p>Voluptas numquam animi quisquam est officiis rem. Cumque et sapiente voluptatibus delectus fuga incidunt quas. Odit enim exercitationem aut a iure adipisci quidem. Tempora pariatur et maxime temporibus. Voluptatem hic voluptatem reiciendis fuga voluptates est doloremque facilis. Blanditiis facere ut architecto aut.</p>
 				</template>
